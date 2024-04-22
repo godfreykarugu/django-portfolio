@@ -1,0 +1,61 @@
+ {% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+             my app
+         {% endblock title %}
+    </title> 
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="nav">
+        
+        <div class="navbar">
+            <div class="navname">
+               <a href="/"> <h2>God<span style="color:yellow">frey</span>.</h2></a>
+            </div>
+            <div class="links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/project">Project</a>
+            <a href="/contact">contact</a>
+            </div>
+        </div>
+   </div>
+
+
+
+   <section id="main">
+  
+    {% block content %}
+        
+    {% endblock content %}
+   </section> 
+   <div class="footer">
+    <div class="row">
+        <p style="tex">&copy; Copyright Godfrey. All Rights Reserved <br> Designed by <span style="color:#00ff00">Techub</span></p>
+    </div>
+
+        <hr>
+        <div class="social-links">
+            <div class="social-links">
+                
+                    <a href="#" class="twitter"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    
+                    <a href="#" class="facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="instagram"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#" class="google-plus"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href="#" class="linkedin"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  
+            </div>
+            
+        </div>
+   </div>
+</body>
+</html>

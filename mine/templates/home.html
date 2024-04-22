@@ -1,0 +1,37 @@
+{% extends "layout.html" %} %
+{% comment %} {% extends "layout.html" %} {% endcomment %}
+
+{% load static %}
+
+{% block title %}
+    home
+{% endblock title %}
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+{% block content %}
+
+   
+ <section class="hero">
+    <div class="row">
+        <div class="">
+            <h1>Hey, I'm Godfrey  <span style="color:red" > Full Stack</span>  Developer</h1>
+            {% comment %} <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum neque reiciendis sequi repellendus consequatur. Iusto at dolorum, velit rem, nisi illo facere quia nulla dignissimos, placeat exercitationem provident error? Accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ad doloremque, molestiae maiores deleniti nostrum, quasi, sed dolores voluptas nesciunt omnis recusandae labore reiciendis nihil ex nisi porro. Alias, tenetur.
+            </p> {% endcomment %}
+            <a href="about/"><button class='btn'>ABOUT ME</button></a>
+        </div>
+       
+
+        {% comment %} <div class="col-2">
+            <img src="{% static 'images/hero-bg.jp' %}" alt="">
+        </div> {% endcomment %}
+
+    </div>
+ </section>
+
+    
+{% endblock content %} 
+
+
+

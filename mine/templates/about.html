@@ -1,0 +1,118 @@
+ {% extends "layout.html" %}
+
+{% load static %}
+{% block title %}
+    about
+{% endblock title %}
+
+
+{% block content %}
+   
+    <div class="container" style="background-color:#dedddc;">
+        <div class="row section-padding ">
+            <div class="col-1">
+                <h1>about godfrey</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet repudiandae fugiat incidunt. Rerum iure a unde molestias, at explicabo praesentium laudantium voluptatum ea repellat. Doloribus suscipit repudiandae at magni magnam totam voluptatibus nam voluptatum. Consequatur quam consectetur eveniet optio quae.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-l">
+                
+
+                <img src="{% static 'images/about.jpg' %}" alt="">
+            </div>
+            <div class="col-r">
+                    <div class="row">
+                        <div class="col-1">
+                            <h1>Full Stack Developer</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat saepe quis nemo rerum voluptate nesciunt? Sed assumenda dolor, facilis perspiciatis quam animi facere ab asperiores obcaecati voluptatibus deserunt impedit. Debitis?</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p><strong>Birthday: </strong> 1 May 1995</p>
+                            <p><strong>Website: </strong>www.techub.com</p>
+                            <p><strong>Phone: </strong>+254 456 7890</p>
+                            <p><strong>City: </strong>Nairobi, Kenya</p>                 
+                        </div>
+                        <div class="col-2">
+                            <p><strong>Age: </strong> 30</p>
+                            <p><strong>Website: </strong>Bachelors</p>
+                            <p><strong>PhEmailone </strong>infor@techub.com</p>
+                            <p><strong>Freelance: </strong>Available</p>  
+                            
+                           
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top:15px">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem et officiis ipsam quae explicabo veniam consectetur nostrum cupiditate excepturi, pariatur at nam sint nobis illo quasi id voluptas beatae recusandae. Cupiditate eum labore, aut delectus aliquid distinctio similique! Quo vel eius voluptatibus, minima suscipit esse excepturi. Amet expedita quae at accusamus voluptates dolor, sed dolore officia, nihil, esse inventore ex.</p>
+                    </div>
+            </div>
+        </div>
+        
+     <section class="section-padding">
+
+        <div class="row section-padding">
+            <div class="col-1">
+                <h1>skills</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet repudiandae fugiat incidunt. Rerum iure a unde molestias, at explicabo praesentium laudantium voluptatum ea repellat. Doloribus suscipit repudiandae at magni magnam totam voluptatibus nam voluptatum. Consequatur quam consectetur eveniet optio quae.</p>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+                <label for="file">Html:</label>
+                <span><progress id="file" value="92" max="100"> 92% </progress> 92%</span><br><br>
+
+                <label for="file">CSS:</label>
+                <span><progress id="file" value="60" max="100"> 92% </progress> 60%</span><br><br>
+
+                <label for="file">Bootstrap:</label>
+                <span><progress id="file" value="90" max="100"> 92% </progress> 90%</span><br><br>
+        </div>
+        <div class="col-2">
+                <label for="file">Python:</label>
+                <span><progress id="file" value="70" max="100"> 70% </progress>  70%</span><br><br>
+
+                <label for="file">Django:</label>
+                <span><progress id="file" value="70" max="100"> 70% </progress>  50%</span><br><br>
+
+                <label for="file">Sql:</label>
+                <span><progress id="file" value="50" max="100"> 70% </progress>  50%</span><br><br>
+        </div>
+      </div>
+
+     </section>
+
+     {% comment %}--------------- Facts section------------------  {% endcomment %}
+
+        <section class="section-padding">
+            <div class="row">
+                <div class="col-1">
+                    <h1>Facts</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente accusantium, perspiciatis est error ducimus eligendi id officiis consectetur illum cum distinctio reprehenderit odio a, illo dicta, minima debitis eaque iure.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="h1" style="font-size:72px; color:green;">232</div>
+                    <p style="padding-left:15px; font-size:28px">clients</p>
+                </div>
+
+                <div class="col-4">
+                    <div class="h1" style="font-size:72px; color:green;">23</div>
+                    <p style="padding-left:15px; font-size:28px">Projects</p>
+                </div>
+
+                <div class="col-4">
+                    <div class="h1" style="font-size:72px; color:green;">12</div>
+                    <p style="padding-left:15px; font-size:28px">Awards</p>
+                </div>
+
+                <div class="col-4">
+                    <div class="h1" style="font-size:72px; color:green;">208</div>
+                    <p style="padding-left:15px; font-size:28px">Journal mentions</p>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock content %} 
